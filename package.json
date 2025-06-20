@@ -1,0 +1,27 @@
+{
+    "name": "math-games-zimjs",
+    "version": "1.0.0",
+    "description": "Zim Math Games",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "build": "webpack"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.6",
+        "copy-webpack-plugin": "^13.0.0",
+        "howler": "^2.2.4",
+        
+        "zimjs": "^16.4.1"
+    },
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "html-webpack-plugin": "^5.6.3",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.0.0",
+        "webpack-cli": "^4.0.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
