@@ -1,2 +1,12 @@
 node_modules/
 dist/
+*.zip
+*.tar.gz
+*.tgz
+*.log
+*.env
+.DS_Store
+
+
+
+
