@@ -1,0 +1,53 @@
+<?php  
+session_start();
+
+  if( !isset($_SESSION["signedInUserEmail"]))
+  {
+  		header("Location: ../index.php");
+		die();
+  }
+  
+include "./header.php";
+
+ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ 
+<title></title> 
+<?php  
+ 
+include "./navBar.php" ;
+ 
+ echo  "<script> window.userid = " . $_SESSION["signedInUserId"] . "</script>";
+
+?>
+ 
+</head>
+<body>
+
+
+  
+
+</div>
+ 
+<div id="mainMenu_Id" class="d-grid gap-2 col-6  mx-auto m-5" >
+ 
+  <button id="additionTraining" class="btn btn-primary m-2" type="button" >Addition Training</button>
+  <button id="subtractionTraining" class="btn btn-primary m-2" type="button" >Subtraction Training</button>
+  <button id="multiplicationTraining" class="btn btn-primary m-2" type="button" >Multiplication Training</button>
+  <button id="divisionTraining" class="btn btn-primary m-2" type="button" >Division Training</button>
+
+</div>
+
+
+ 
+<?php  
+include "footer.php";
+?>
+ 
+ 
+<script src="./training.bundle.js"></script></body>
+</html>
